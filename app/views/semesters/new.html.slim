@@ -1,0 +1,7 @@
+h1 = 'Создание семестра'
+
+= form_for @semester, url: semesters_path do |f|
+  = f.text_field :name
+  = f.text_field :fullname
+  = f.check_box :current
+  = f.submit 'Создать семестр'
